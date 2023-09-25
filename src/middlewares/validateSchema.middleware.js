@@ -11,7 +11,7 @@ export default function validateSchemaGame(req, res, next) {
     next()
 }
 
-export default function validateSchemaCustomers(req, res, next) {
+export  function validateSchemaCustomers(req, res, next) {
     const validate = customerSchema.validate(req.body, { abortEarly: false })
 
     if (validate.error) {
